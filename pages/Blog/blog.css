@@ -118,10 +118,11 @@ main {
   flex-direction: column;
   align-items: flex-start;
   gap: 24px;
+
+  margin-bottom: 150px;
 }
 #title {
   width: 408px;
-
   display: flex;
   flex-direction: column;
   align-items: flex-start;
