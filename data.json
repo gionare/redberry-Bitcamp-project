@@ -1,0 +1,299 @@
+{ 
+    
+"data":[
+    {
+    "id": 1,
+    "title": "EOMM-ის მრჩეველთა საბჭოს ნინო ეგაძე შეუერთდა",
+    "description": "6 თვის შემდეგ ყველის ბრმა დეგუსტაციის დროც დადგა. მაქსიმალური სიზუსტისთვის, ეს პროცესი...",
+    "image": "./assets/unsplash_01_igFr7hd4.png",
+    "publish_date": "2023-11-19",
+    "categories": [
+      {
+        "id": 1,
+        "name": "მარკეტი",
+        "text_color": "#D6961C",
+        "background_color": "#FFB82F14"
+      },
+      {
+        "id": 2,
+        "name": "აპლიკაცია",
+        "text_color": "#15C972",
+        "background_color": "#1CD67D14"
+      },
+      {
+        "id": 3,
+        "name": "ხელოვნური ინტელექტი",
+        "text_color":"#B71FDD",
+        "background_color":"#B11CD614"
+      }
+    ],
+    "author": "ლილე კვარაცხელია"
+  },
+  {
+    "id": 2,
+    "title": "Blog title 2",
+    "description": "6 თვის შემდეგ ყველის ბრმა დეგუსტაციის დროც დადგა. მაქსიმალური სიზუსტისთვის, ეს პროცესი...",
+    "image": "./assets/unsplash_newhL3aprGk.png",
+    "publish_date": "2023-11-20 ",
+    "categories": [
+      {
+        "id": 4,
+        "name": "UI/UX",
+        "text_color": "#DC2828",
+        "background_color": "#FA575714"
+      },
+      {
+        "id": 5,
+        "name": "კვლევა",
+        "text_color": "#60BE16",
+        "background_color": "#70CF2514"
+      }
+    ],
+    "author": "ტატო სამხარაძე"
+  },
+  {
+    "id": 3,
+    "title": "Blog title 3",
+    "description": "6 თვის შემდეგ ყველის ბრმა დეგუსტაციის დროც დადგა. მაქსიმალური სიზუსტისთვის, ეს პროცესი...",
+    "image": "./assets/unsplash_L0nipfx-Ry4.png",
+    "publish_date": "2023-11-21 ",
+    "categories": [
+      {
+        "id": 6,
+        "name": "Figma",
+        "text_color": "#1AC7A8",
+        "background_color": "#08D2AE14"
+      },
+      {
+        "id": 7,
+        "name": "UI/UX",
+        "text_color": "#DC2828",
+        "background_color": "#FA575714"
+      }
+    ],
+    "author": "ტატო სამხარაძე"
+  },
+  {
+    "id": 4,
+    "title": "Title 4",
+    "description": "6 თვის შემდეგ ყველის ბრმა დეგუსტაციის დროც დადგა. მაქსიმალური სიზუსტისთვის, ეს პროცესი...",
+    "image": "./assets/unsplash_01_igFr7hd4.png",
+    "publish_date": "2023-11-21",
+    "categories": [
+      {
+        "id": 8,
+        "name": "UI/UX",
+        "text_color": "#DC2828",
+        "background_color": "#FA575714"
+      },
+      {
+        "id": 9,
+        "name": "კვლევა",
+        "text_color": "#60BE16",
+        "background_color": "#70CF2514"
+      }
+    ],
+    "author": "Jane Doe"
+  },
+  {
+    "id": 5,
+    "title": "Title 5",
+    "description": "6 თვის შემდეგ ყველის ბრმა დეგუსტაციის დროც დადგა. მაქსიმალური სიზუსტისთვის, ეს პროცესი...",
+    "image": "./assets/unsplash_01_igFr7hd4.png",
+    "publish_date": "2023-11-22",
+    "categories": [
+      {
+        "id": 10,
+        "name": "UI/UX",
+        "text_color": "#DC2828",
+        "background_color": "#FA575714"
+      },
+      {
+        "id": 11,
+        "name": "კვლევა",
+        "text_color": "#60BE16",
+        "background_color": "#70CF2514"
+      }
+    ],
+    "author": "John Smith"
+  },
+  {
+    "id": 6,
+    "title": "Title 6",
+    "description": "6 თვის შემდეგ ყველის ბრმა დეგუსტაციის დროც დადგა. მაქსიმალური სიზუსტისთვის, ეს პროცესი...",
+    "image": "./assets/unsplash_newhL3aprGk.png",
+    "publish_date": "2023-11-23",
+    "categories": [
+      {
+        "id": 12,
+        "name": "UI/UX",
+        "text_color": "#DC2828",
+        "background_color": "#FA575714"
+      },
+      {
+        "id": 13,
+        "name": "კვლევა",
+        "text_color": "#60BE16",
+        "background_color": "#70CF2514"
+      }
+    ],
+    "author": "Alice Johnson"
+  },
+  {
+    "id": 7,
+    "title": "Title 7",
+    "description": "6 თვის შემდეგ ყველის ბრმა დეგუსტაციის დროც დადგა. მაქსიმალური სიზუსტისთვის, ეს პროცესი...",
+    "image": "./assets/unsplash_01_igFr7hd4.png",
+    "publish_date": "2023-11-24",
+    "categories": [
+      {
+        "id":14,
+        "name": "ხელოვნური ინტელექტი",
+        "text_color":"#B71FDD",
+        "background_color":"#B11CD614"
+      },
+      {
+        "id": 15,
+        "name": "კვლევა",
+        "text_color": "#60BE16",
+        "background_color": "#70CF2514"
+      }
+    ],
+    "author": "Bob Miller"
+  },
+  {
+    "id": 8,
+    "title": "Title 8",
+    "description": "6 თვის შემდეგ ყველის ბრმა დეგუსტაციის დროც დადგა. მაქსიმალური სიზუსტისთვის, ეს პროცესი...",
+    "image": "./assets/unsplash_L0nipfx-Ry4.png",
+    "publish_date": "2023-11-25",
+    "categories": [
+      {
+        "id": 16,
+        "name": "Figma",
+        "text_color": "#1AC7A8",
+        "background_color": "#08D2AE14"
+      },
+      {
+        "id": 17,
+        "name": "კვლევა",
+        "text_color": "#60BE16",
+        "background_color": "#70CF2514"
+      }
+    ],
+    "author": "Eve Davis"
+  },
+  {
+    "id": 9,
+    "title": "Title 9",
+    "description": "6 თვის შემდეგ ყველის ბრმა დეგუსტაციის დროც დადგა. მაქსიმალური სიზუსტისთვის, ეს პროცესი...",
+    "image": "./assets/unsplash_01_igFr7hd4.png",
+    "publish_date": "2023-11-26",
+    "categories": [
+      {
+        "id": 18,
+        "name": "კვლევა",
+        "text_color": "#60BE16",
+        "background_color": "#70CF2514"
+      },
+      {
+        "id": 19,
+        "name": "ხელოვნური ინტელექტი",
+        "text_color":"#B71FDD",
+        "background_color":"#B11CD614"
+      }
+    ],
+    "author": "Charlie Brown"
+  },
+  {
+    "id": 10,
+    "title": "Title 10",
+    "description": "6 თვის შემდეგ ყველის ბრმა დეგუსტაციის დროც დადგა. მაქსიმალური სიზუსტისთვის, ეს პროცესი...",
+    "image": "./assets/unsplash_L0nipfx-Ry4.png",
+    "publish_date": "2023-11-27",
+    "categories": [
+      {
+        "id": 20,
+        "name": "მარკეტი",
+        "text_color": "#D6961C",
+        "background_color": "#FFB82F14"
+      },
+      {
+        "id": 21,
+        "name": "აპლიკაცია",
+        "text_color": "#15C972",
+        "background_color": "#1CD67D14"
+      }
+    ],
+    "author": "Diana Johnson"
+  },
+  {
+    "id": 11,
+    "title": "Title 11",
+    "description": "6 თვის შემდეგ ყველის ბრმა დეგუსტაციის დროც დადგა. მაქსიმალური სიზუსტისთვის, ეს პროცესი...",
+    "image": "./assets/unsplash_newhL3aprGk.png",
+    "publish_date": "2023-11-28",
+    "categories": [
+      {
+        "id": 22,
+        "name": "აპლიკაცია",
+        "text_color": "#15C972",
+        "background_color": "#1CD67D14"
+      },
+      {
+        "id": 23,
+        "name": "ხელოვნური ინტელექტი",
+        "text_color":"#B71FDD",
+        "background_color":"#B11CD614"
+      }
+    ],
+    "author": "Frank White"
+  },
+  {
+    "id": 12,
+    "title": "Title 12",
+    "description": "6 თვის შემდეგ ყველის ბრმა დეგუსტაციის დროც დადგა. მაქსიმალური სიზუსტისთვის, ეს პროცესი...",
+    "image": "./assets/unsplash_L0nipfx-Ry4.png",
+    "publish_date": "2023-11-29",
+    "categories": [
+      {
+        "id": 23,
+        "name": "კვლევა",
+        "text_color": "#60BE16",
+        "background_color": "#70CF2514"
+      },
+      {
+        "id": 24,
+        "name": "Figma",
+        "text_color": "#1AC7A8",
+        "background_color": "#08D2AE14"
+      }
+    ],
+    "author": "Grace Miller"
+  },
+  {
+    "id": 13,
+    "title": "Title 13",
+    "description": "6 თვის შემდეგ ყველის ბრმა დეგუსტაციის დროც დადგა. მაქსიმალური სიზუსტისთვის, ეს პროცესი...",
+    "image": "./assets/unsplash_01_igFr7hd4.png",
+    "publish_date": "2023-11-30",
+    "categories": [
+      {
+        "id": 25,
+        "name": "UI/UX",
+        "text_color": "#DC2828",
+        "background_color": "#FA575714"
+      }
+      ,
+      {
+        "id":26,
+        "name": "კვლევა",
+        "text_color": "#60BE16",
+        "background_color": "#70CF2514"
+      }
+    ],
+    "author": "Harry Davis"
+  }
+
+]
+}

@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@fontsource/firago": "^5.0.7",
+    "json-server": "^1.0.0-alpha.21"
+  }
+}

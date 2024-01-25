@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../common.css" />
+    <link rel="stylesheet" href="newBlog.css" />
+    <script src="./newBlog.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="header-img">
+        <img src="../../assets/logo.png" alt="Logo">
+      </div>
+    </header>
+
+    <main>
+        <div>
+          <h2>ბლოგის დამატება</h2>
+        </div>
+
+        <div class="information-form" >
+
+          <!-- Upload picture -->
+          <div class="picture-upload">
+            <label id="upload-picture" for="picture">ატვირთეთ ფოტო</label>
+            <div class="picture-upload-container">
+              <img src="../../assets/folder-add.png" alt="folder-add">
+              <form action="">
+                <label for="img">ჩააგდე ფაილი აქ ან
+                  <span style="cursor: pointer;"><b><u>აირჩიეთ ფაილი</u></b></span>
+                  <input type="file" id="img" name="img" accept="image/*" style="display: none;"/>
+                </label> 
+              </form>
+            </div>
+
+          </div>
+
+          <!-- author -->
+          <div class="container author" id="author">
+            <label for="name">ავტორი *</label>
+            <input
+              type="text"
+              class="inputText"
+              id="name"
+              placeholder="შეიყვანეთ ავტორი"
+              name="name"
+              required
+              minlength="4"
+              required
+              pattern="[a-zA-Z]{2,}"
+            />
+            <ul class="instruction" id="instruction-list">
+              <li>მინიმუმ 4 სიმბოლო</li>
+              <li>მინიმუმ 2 სიტყვა</li>
+              <li>მხოლოდ ქართული სიმბოლოები</li>
+            </ul>
+          </div>
+
+          <!-- title -->
+          <div class="container title" id="title">
+            <label for="name">სათაური *</label>
+            <input class="inputText" id="title-heading" name="name" type="text" placeholder="შეიყვანეთ სათაური" minlength="2" required/>
+            <span class="instruction" id="title-instruction">მინიმუმ 4 სიმბოლო</span>
+          </div>
+
+          <!-- description -->
+          <div class="description">
+            <label for="description">აღწერა *</label>
+            <textarea placeholder="შეიყვანეთ აღწერა" id="about-title" name="description" required minlength="2"></textarea>
+            <span class="instruction" id="desc-instruction" >მინიმუმ 2 სიმბოლო</span>
+          </div>
+
+
+          <!-- publish date -->
+          <div class="container publishDate" id="title-author-releaseDate">
+            <label for="publishDate">გამოქვეყნების თარიღი *</label>
+            <input class="inputText" id="todayDate" type='date' name="publishDate" placeholder="" required></input>
+          </div>
+
+          <!-- category -->
+          <div class="container category">
+            <label for="category">კატეგორია *</label>
+            <select class="inputText" name="category" id="categories">
+              <option value="">აირჩიეთ კატეგორია</option>
+              <option value="მარკეტი" id="market">მარკეტი</option>
+              <option value="აპლიკაცია" id="application">აპლიკაცია</option>
+              <option value="ხელოვნური ინტელექტი" id="ai">ხელოვნური ინტელექტი</option>
+              <option value="UI/UX" id="ui-ux">UI/UX</option>
+              <option value="კვლევა" id="research">კვლევა</option>
+              <option value="Figma" id="figma">Figma</option>
+            </select>
+          </div>
+
+          <!-- email -->
+          <div class="container email">
+            <label for="email">ელ-ფოსტა</label>
+            <input class="inputText" type="email" id="email" pattern=".+@redberry\.ge" size="30 required" placeholder="Example@redberry.ge">
+          </div>   
+          <div id="error"></div>
+
+        </div>
+      
+        <div class="submit">
+          <button class="submit-btn" onclick="openPopup()">გამოქვეყნება</button>
+        </div>
+        <!-- /* ----------------------- submit button Popup ----------------------- */ -->
+        <div class="popup" id="popup">
+          <img src="../../assets/tick-circle.svg" alt="">
+          <h3>ჩანაწერი წარმატებით დაემატა</h3>
+          <button type="button" onclick="closePopup()" ><a href="../../index.html">მთავარ გვერდზე დაბრუნება</a></button>
+        </div>
+
+    </main>
+
+
+  </body>
+</html>

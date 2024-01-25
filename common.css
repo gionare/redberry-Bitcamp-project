@@ -1,0 +1,34 @@
+/* გამოიყენეთ საერთო სტილებისთვის */
+
+/* _________ HEADER _________ */
+#header-logo {
+  width: 1288px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #e4e3eb;
+}
+#enter {
+  color: #fff;
+  font-family: FiraGO;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  width: 93px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background: #5d37f3;
+}
+#enter:hover {
+  cursor: pointer;
+  background: #766cf1;
+}

@@ -1,0 +1,131 @@
+body {
+  background: #f3f2fa;
+}
+main {
+  /* border: solid; */
+  width: 1440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+/* W R A P P E R */
+.content-wrapper {
+  /* border: solid; */
+  width: 720px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-bottom: 80px;
+  align-items: flex-start;
+  gap: 40px;
+}
+img {
+  border-radius: 12px;
+}
+
+h5 {
+  color: #1a1a1f;
+  font-family: FiraGO;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 125% */
+}
+span {
+  color: #85858d;
+  font-family: FiraGO;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 133.333% */
+}
+.content-text {
+  color: #404049;
+  font-family: FiraGO;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+}
+/* C A T E G O R I E S */
+#categories {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+#categories button {
+  border: none;
+  border-radius: 30px;
+  padding: 6px 10px;
+  align-items: flex-start;
+}
+#market {
+  color: #d6961c;
+  font-family: FiraGO;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 133.333% */
+  border-radius: 30px;
+  background: rgba(255, 184, 47, 0.08);
+}
+#application {
+  width: 97px;
+  background: rgba(28, 214, 125, 0.08);
+  color: #15c972;
+}
+#ai {
+  width: 200px;
+  background: rgba(177, 28, 214, 0.08);
+  color: #b71fdd;
+}
+#ui-ux {
+  width: 65px;
+  color: #dc2828;
+  background: rgba(250, 87, 87, 0.08);
+}
+#research {
+  width: 77px;
+  color: #60be16;
+  background: rgba(112, 207, 37, 0.08);
+}
+#figma {
+  width: 64px;
+  background: rgba(8, 210, 174, 0.08);
+  color: #1ac7a8;
+}
+
+/* S L I D E R   S I D E */
+.slide-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  box-sizing: inline;
+}
+#slider {
+  /* border: solid; */
+  display: flex;
+  width: 1288px;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 56px 32px;
+  flex-wrap: wrap;
+}
+#frame1 {
+  /* border: solid; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+#title {
+  width: 408px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}

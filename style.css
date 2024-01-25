@@ -1,0 +1,415 @@
+@font-face {
+  font-family: firaGO;
+  src: url(./assets/Fonts/FiraGO_OTF_1001/Roman/FiraGO-Bold.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: firaGO;
+  min-height: 100vh;
+  background: #f3f2fa;
+}
+
+#header-logo {
+  width: 1288px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #e4e3eb;
+  background: white;
+}
+
+#enter {
+  color: #fff;
+  font-family: FiraGO;
+  font-size: 14px;
+  font-style: normal;
+  
+  font-weight: 500;
+  line-height: 20px;
+  width: 93px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background: #5d37f3;
+}
+#enter:hover {
+  cursor: pointer;
+  background: #766cf1;
+}
+
+nav {
+  width: 1288px;
+  padding-top: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  color: #1a1a1f;
+  font-family: FiraGO;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 72px;
+}
+main {
+  position: relative;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.categories {
+  outline: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  border: none;
+  gap: 24px;
+}
+
+li {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button{
+  cursor: pointer;
+  display: flex;
+justify-content: center;
+align-items: center;
+  height: 32px;
+  border-radius: 30px;
+  font-family: FiraGO;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+ border: 0;
+  text-align: center;
+}
+
+.market {
+  width: 83px;
+  background: rgba(255, 184, 47, 0.08);
+
+  color: #d6961c;
+}
+
+
+.application {
+  width: 97px;
+  background: rgba(28, 214, 125, 0.08);
+  color: #15c972;
+}
+.ai {
+  width: 178px;
+  background: rgba(177, 28, 214, 0.08);
+  color: #b71fdd;
+}
+.ui-ux {
+  width: 65px;
+  color: #dc2828;
+  background: rgba(250, 87, 87, 0.08);
+}
+.research {
+  width: 77px;
+  color: #60be16;
+  background: rgba(112, 207, 37, 0.08);
+}
+.figma {
+  width: 64px;
+  background: rgba(8, 210, 174, 0.08);
+  color: #1ac7a8;
+}
+
+.cards {
+  width: 1288px;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 56px 32px;
+  align-items: flex-start;
+  align-content: flex-start;
+  padding-bottom: 50px;
+}
+.card {
+  width: 408px;
+  height: 620px;
+  border-radius: 5px;
+  gap: 24px;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.title-author-releaseDate {
+  padding-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+h5 {
+  width: 408px;
+  color: #1a1a1f;
+  font-family: FiraGO, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+span {
+  color: #85858d;
+
+  font-family: FiraGO, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+ h3{
+  color: #1a1a1f;
+  font-family: FiraGO;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.mutual-categories {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+ul{
+  list-style: none;
+}
+
+.about-title {
+  color: #404049;
+  width: 408px;
+  font-family: FiraGO;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+.see-more {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+a {
+  color: #5d37f3;
+  text-decoration: none;
+  font-family: FiraGO;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+
+#mutual-categories-lists {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+
+
+.mutual-market {
+  width: 51px;
+  background: rgba(255, 184, 47, 0.08);
+  color: #d6961c;
+}
+.mutual-application {
+  width: 85px;
+  background: rgba(28, 214, 125, 0.08);
+  color: #15c972;
+}
+.mutual-ai {
+  width: 166px;
+  background: rgba(177, 28, 214, 0.08);
+  color: #b71fdd;
+}
+.mutual-ui-ux {
+  width: 53px;
+  color: #dc2828;
+  background: rgba(250, 87, 87, 0.08);
+}
+.mutual-research {
+  width: 65px;
+  color: #60be16;
+  background: rgba(112, 207, 37, 0.08);
+}
+.mutual-figma {
+  width: 52px;
+  background: rgba(8, 210, 174, 0.08);
+  color: #1ac7a8;
+}
+
+
+.login{
+width: 480px;
+height: 272px;
+border-radius: 12px;
+background: #FFF;
+
+  gap: 8px;
+  display: none;
+align-items: center;
+flex-direction: column;
+position: absolute;
+top: -110px;
+
+}
+
+h4 {
+  color: #1A1A1F;
+text-align: center;
+font-family: FiraGO;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 32px; /* 133.333% */
+}
+.exit {
+  margin-top: 20px;
+   padding-left: 410px;
+   cursor: pointer;
+}
+.login-header {
+margin-top: 10px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+input {
+  width: 432px;
+height: 44px;
+ border-radius: 12px;
+border: 1.5px solid #5D37F3;
+background: #F7F7FF;
+}
+
+form{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 15px;
+}
+#submit {
+  width: 432px;
+  height: 40px;
+border-radius: 8px;
+background: #5D37F3;
+color: #FFF;
+font-family: FiraGO;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px;
+}
+.error {
+  display: flex;
+  gap: 5px;
+  justify-content: flex-start;
+  align-items: center;
+  display: none;
+}
+#error-message {
+  color: #EA1919;
+font-family: FiraGO;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px;
+}
+.authorization {
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+
+.text {
+
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+h2 {
+
+  color: #1A1A1F;
+text-align: center;
+font-family: FiraGO;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 28px
+}
+.okay {
+  width: 432px;
+  height: 40px;
+border-radius: 8px;
+background: #5D37F3;
+color: #FFF;
+font-family: FiraGO;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px;
+margin-top: 40px;
+}
+/* .logins{
+  width: 400px;
+  height: 300px;
+  gap: 50px;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  background: white;
+}
+input{
+  width: 300px;
+  height: 100px;
+}
+button{
+  width: 300px;
+  height: 100px;
+} */
