@@ -103,7 +103,10 @@ const loginHeader = document.querySelector(".login-header");
 const authorization = document.querySelector(".authorization");
 const emailInp = document.querySelector("#login-email");
 const errorMessage = document.querySelector("#error-message");
+const okay = document.querySelector(".okay");
+const addBlogBtn = document.querySelector("#add-blog-btn");
 
+// (შესვლა)enter-ზე დაკლიკებისას
 enter.addEventListener("click", () => {
   login.style.display = "flex";
 });
@@ -111,26 +114,39 @@ enter.addEventListener("click", () => {
 exit.addEventListener("click", () => {
   login.style.display = "none";
 });
-
+// submit-ზე დაკლიკებისას avoid to reload the page
 submit.addEventListener("click", async (e) => {
   e.preventDefault();
 
+  //მივმართოთ POST method-ით API-ის
   const response = await fetch("https://george.pythonanywhere.com/api/login/", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
+    // API-ს გადავცეთ/POST emailInp.value
     body: JSON.stringify({
       email: emailInp.value,
     }),
   });
+  // data დავარქვათ, რესპონსს API-დან parsed as JSON. და შევინახოთ local Storage-ში
   const data = await response.json();
-  localStorage.setItem("token", data.token);
+  if (response.ok) {
+    localStorage.setItem("token", data.token);
+
+    authorization.style.display = "flex";
+    login.style.display = "none";
+
+    okay.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      enter.style.display = "none";
+      addBlogBtn.style.display = "flex";
+      authorization.style.display = "none";
+    });
+  }
 });
 
-const okay = document.querySelector(".okay");
-
-okay.addEventListener("click", (e) => {
-  e.preventDefault();
-  login.style.display = "none";
-});
+// * API endpoint-ზე POST request-ის გაგზავნის მერე
+//      email: emailInp.value
+// მივრუნებს responces

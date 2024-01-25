@@ -1,6 +1,8 @@
 body {
   font-family: "FiraGO", sans-serif;
   background: #fbfaff;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 /* for all labels */
@@ -28,7 +30,7 @@ label {
 
 /* ____ Main ____ */
 main {
-  border: solid;
+  /* border: solid; */
   display: flex;
   flex-direction: column;
   justify-content: center;
