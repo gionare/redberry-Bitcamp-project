@@ -9,7 +9,7 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="header">
+    <header>
       <div class="header-img">
         <a href="../../index.html"
           ><img src="../../assets/logo.png" alt="Logo"
@@ -136,7 +136,6 @@
             type="email"
             id="email"
             pattern=".+@redberry\.ge"
-            size="30"
             required
             placeholder="Example@redberry.ge"
           />
@@ -145,13 +144,15 @@
       </div>
 
       <div class="submit">
-        <button class="submit-btn" onclick="openPopup()">გამოქვეყნება</button>
+        <button class="submit-btn" id="submitBtn" onclick="openPopup()">
+          გამოქვეყნება
+        </button>
       </div>
-      <!-- /* ----------------------- submit button Popup ----------------------- */ -->
-      <div class="popup" id="popup">
+      <!--  ----------------------- submit button Popup -----------------------  -->
+      <div class="popup" id="popup" onclick="closePopup()">
         <img src="../../assets/tick-circle.svg" alt="" />
         <h3>ჩანაწერი წარმატებით დაემატა</h3>
-        <button type="button" onclick="closePopup()">
+        <button type="button">
           <a href="../../index.html">მთავარ გვერდზე დაბრუნება</a>
         </button>
       </div>

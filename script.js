@@ -1,31 +1,3 @@
-const stators = [
-  {
-    fullName: "ნია გოგსაძე",
-    releaseDate: "02.11.2023",
-    title: "EOMM-ის მრჩეველთა საბჭოს ნინო ეგაძე შეუერთდა",
-    categories: ["მარკეტი", "აპლიკაცია", "ხელოვნური ინტელექტი"],
-    about:
-      "6 თვის შემდეგ ყველის ბრმა დეგუსტაციის დროც დადგა. მაქსიმალური სიზუსტისთვის, ეს პროცესი...",
-  },
-  {
-    fullName: " თორნიკე მამასახლისი",
-    releaseDate: "02.11.2023",
-    title: "მოსმენა ყველს უფრო გემრიელს ხდის?",
-    categories: ["UI/UX", "კვლევა"],
-    about:
-      "6 თვის შემდეგ ყველის ბრმა დეგუსტაციის დროც დადგა. მაქსიმალური სიზუსტისთვის, ეს პროცესი...",
-  },
-  {
-    fullName: "კობა ბელთაძე",
-    releaseDate: "02.11.2023",
-    title:
-      "მობილური ფოტოგრაფიის კონკურსის გამარჯვებულთა ვინაობა ცნობილია. მ...",
-    categories: ["Figma", " UI/UX"],
-    about:
-      "6 თვის შემდეგ ყველის ბრმა დეგუსტაციის დროც დადგა. მაქსიმალური სიზუსტისთვის, ეს პროცესი...",
-  },
-];
-
 const image = Array.from(document.getElementsByClassName("image"));
 const blogSection = document.querySelector(".cards");
 const categorySection = document.querySelector(".categories");
@@ -33,6 +5,7 @@ let isClicked = false;
 
 let category = "  ";
 
+// -- categories
 categorySection.addEventListener("click", (e) => {
   const button = e.target.closest("button");
   if (!button) return;
@@ -50,6 +23,7 @@ categorySection.addEventListener("click", (e) => {
   }
 });
 
+// -- Blog from API
 async function render() {
   const response = await fetch("https://george.pythonanywhere.com/api/blogs/");
   const data = await response.json();
@@ -58,13 +32,15 @@ async function render() {
     .map(
       (item) => `<div class="card">
 <section class="image">
-<img src = "${item.image}" style="width: 200px; height: 200px" alt="">
+  <img src = "${item.image}" style="width: 400px; height: 320px" alt="">
 </section>
+
 <section class="title">
   <section class="title-author-releaseDate">
     <h5>${item.author}</h5>
     <span>${item.publish_date}</span>
   </section>
+  
   <section class="title-heading">
 <h3>${item.title}</h3>
   </section>
@@ -79,7 +55,7 @@ async function render() {
     </ul>
      <p class="about-title">${item.description}</p>
      <section class="see-more">
-      <a href="">სრულად ნახვა</a>
+      <a href="pages/Blog/blog.html">სრულად ნახვა</a>
       <img src="./assets/Arrow.svg" alt="">
      </section>
 </section>

@@ -82,7 +82,7 @@ button {
   border: 0;
   text-align: center;
 }
-
+/*  categories  */
 .market {
   width: 83px;
   background: rgba(255, 184, 47, 0.08);
@@ -117,6 +117,7 @@ button {
 }
 
 .cards {
+  /* border: solid; */
   width: 1288px;
   margin-top: 30px;
   display: flex;
@@ -127,8 +128,10 @@ button {
   padding-bottom: 50px;
 }
 .card {
+  border: solid;
+  box-sizing: border-box;
   width: 408px;
-  height: 620px;
+  height: 820px;
   border-radius: 5px;
   gap: 24px;
 }
