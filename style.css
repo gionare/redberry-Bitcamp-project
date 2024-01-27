@@ -128,12 +128,13 @@ button {
   padding-bottom: 50px;
 }
 .card {
-  border: solid;
-  box-sizing: border-box;
+  /* border: solid; */
   width: 408px;
+  overflow: hidden; /* Hide any content that overflows the container */
+  text-overflow: ellipsis; /* Display an ellipsis (...) for overflowed text */
   height: 820px;
   border-radius: 5px;
-  gap: 24px;
+  gap: 10px;
 }
 .title {
   display: flex;
@@ -172,6 +173,7 @@ h3 {
   font-style: normal;
   font-weight: 500;
   line-height: 28px;
+  white-space: nowrap;
 }
 
 .mutual-categories {
@@ -186,6 +188,9 @@ ul {
 .about-title {
   color: #404049;
   width: 408px;
+  height: 280px;
+  overflow: hidden;
+  /* text-overflow: ellipsis; */
   font-family: FiraGO;
   font-size: 16px;
   font-style: normal;

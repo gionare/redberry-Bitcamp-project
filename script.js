@@ -53,15 +53,17 @@ async function render() {
     )}
  
     </ul>
-     <p class="about-title">${item.description}</p>
-     <section class="see-more">
-      <a href="pages/Blog/blog.html">სრულად ნახვა</a>
-      <img src="./assets/Arrow.svg" alt="">
+    <p class="about-title">${item.description}</p>
+    
+    <section class="see-more">
+     <a href="pages/Blog/blog.html">სრულად ნახვა</a>
+     <img src="./assets/Arrow.svg" alt="">
+    </section>
+    
      </section>
-</section>
-
-
-</div>`
+     
+     
+     </div>`
     )
     .join(" ");
 
