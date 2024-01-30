@@ -2,16 +2,14 @@ body {
   background: #f3f2fa;
 }
 main {
-  /* border: solid; */
   width: 1440px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: auto;
 }
-/* W R A P P E R  CARDs*/
+/* W R A P P E R  CARDS*/
 .card {
-  /* border: solid; */
   width: 720px;
   display: flex;
   flex-direction: column;
@@ -68,7 +66,7 @@ main {
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
-  line-height: 16px; /* 133.333% */
+  line-height: 16px;
   border-radius: 30px;
   background: rgba(255, 184, 47, 0.08);
 }
@@ -107,7 +105,6 @@ main {
   box-sizing: inline;
 }
 #slider {
-  /* border: solid; */
   display: flex;
   width: 1288px;
   align-items: flex-start;
