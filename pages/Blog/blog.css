@@ -9,7 +9,7 @@ main {
   justify-content: center;
   margin: auto;
 }
-
+/* W R A P P E R  CARDs*/
 .card {
   /* border: solid; */
   width: 720px;
@@ -17,8 +17,9 @@ main {
   flex-direction: column;
   justify-items: center;
   justify-content: center;
+  align-items: flex-start;
   margin: auto;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
   margin-top: 40px;
 }
 .image img {
@@ -27,46 +28,27 @@ main {
   margin-left: 20%;
   margin-bottom: 20px;
 }
-.title-author-releaseDate {
+.title-author-releaseDate span {
+  color: #85858d;
+  font-family: FiraGO;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
 }
 .title-heading {
 }
 .mutual-categories {
 }
-/* W R A P P E R */
-/* .content-wrapper {
-  width: 720px;
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  margin-bottom: 80px;
-  align-items: flex-start;
-  gap: 40px;
-} */
-/* h5 {
-  color: #1a1a1f;
-  font-family: FiraGO;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 20px;
-} */
-/* span {
-  color: #85858d;
-  font-family: FiraGO;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 16px; 
-} */
-/* .content-text {
+.about-title {
   color: #404049;
   font-family: FiraGO;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
-} */
+}
+
 /*---- C A T E G O R I E S ----*/
 #categories {
   display: flex;
