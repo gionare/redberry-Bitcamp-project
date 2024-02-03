@@ -16,7 +16,6 @@
         /></a>
       </div>
     </header>
-
     <main>
       <div>
         <h2>ბლოგის დამატება</h2>
@@ -26,21 +25,25 @@
         <!-- Upload picture -->
         <div class="picture-upload">
           <label id="upload-picture" for="picture">ატვირთეთ ფოტო</label>
-          <div class="picture-upload-container">
+
+          <div class="picture-upload-container" id="drop-area">
             <img src="../../assets/folder-add.png" alt="folder-add" />
             <form action="">
-              <label for="img"
+              <label for="input-file"
                 >ჩააგდე ფაილი აქ ან
                 <span style="cursor: pointer"
                   ><b><u>აირჩიეთ ფაილი</u></b></span
                 >
                 <input
                   type="file"
-                  id="img"
-                  name="img"
                   accept="image/*"
-                  style="display: none"
+                  id="input-file"
+                  name="img"
+                  hidden
                 />
+                <div id="image-view">
+                  <img src="icon.png" alt="" />
+                </div>
               </label>
             </form>
           </div>

@@ -56,6 +56,27 @@ main {
   border-radius: 12px;
   border: 1px dashed #85858d;
   background: #f4f3ff;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+}
+#drop-area {
+  background-position: center;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+}
+
+#img-view {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  border: 2px dashed #bbb5ff;
+  background: #f7f8ff;
+}
+#img-view img {
+  width: 100px;
+  margin-top: 25px;
 }
 
 /* -- Author & Title-- */
