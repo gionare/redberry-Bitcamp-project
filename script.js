@@ -24,56 +24,85 @@ categorySection.addEventListener("click", (e) => {
 });
 
 // -- Blog from API
+// dynamically generated HTML
 async function render() {
   const response = await fetch("https://george.pythonanywhere.com/api/blogs/");
   const data = await response.json();
   console.log(data);
   let blogs = data
     .map(
-      (item) => `<div class="card">
-<section class="image">
-  <img src = "${item.image}" style="width: 400px; height: 320px" alt="">
-</section>
+      (item) => `
+      <div class="card">
+        <section class="image">
+          <img src = "${item.image}" style="width: 400px; height: 320px" alt="">
+        </section>
 
-<section class="title">
-  <section class="title-author-releaseDate">
-    <h5>${item.author}</h5>
-    <span>${item.publish_date}</span>
-  </section>
+        <section class="title">
+
+          <section class="title-author-releaseDate">
+            <h5>${item.author}</h5>
+            <span>${item.publish_date}</span>
+          </section>
   
-  <section class="title-heading">
-<h3>${item.title}</h3>
-  </section>
+          <section class="title-heading">
+            <h3>${item.title} ${item.id}</h3>
+          </section>
     
-    <ul class="mutual-categories">
+          <ul class="mutual-categories">
+            ${item.categories.map(
+              (cat) =>
+                `<li style="color: ${cat.text_color}; border-radius:30px; height:28px; background-color: ${cat.background_color}">${cat.name}</li>`
+            )};
+          </ul>
+
+          <p class="about-title">${item.description}</p>
     
-    ${item.categories.map(
-      (cat) =>
-        `<li style="color: ${cat.text_color}; border-radius:30px; height:28px; background-color: ${cat.background_color}">${cat.name}</li>`
-    )}
- 
-    </ul>
-    <p class="about-title">${item.description}</p>
+          <section class="see-more">
+          <a href="pages/Blog/blog.html" data-id="${
+            item.id
+          }" class="see-more-link">სრულად ნახვა</a>
+          <img src="./assets/Arrow.svg" alt="">
+          </section>
     
-    <section class="see-more">
-     <a href="pages/Blog/blog.html">სრულად ნახვა</a>
-     <img src="./assets/Arrow.svg" alt="">
-    </section>
-    
-     </section>
-     
-     
-     </div>`
+        </section>
+        
+      </div>`
     )
     .join(" ");
 
   blogSection.innerHTML = blogs;
 }
 
+//  retrieve the data-id attribute when the "See More" link is clicked.
+let seeMoreBtn = document.querySelectorAll(".see-more-link");
+seeMoreBtn.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    let seeMoreChoosenId = event.currentTarget.getAttribute("data-id");
+    console.log(seeMoreChoosenId);
+  });
+});
+
+// Event delegation for "See More" links
+blogSection.addEventListener("click", (event) => {
+  const seeMoreLink = event.target.closest(".see-more-link");
+  if (seeMoreLink) {
+    event.preventDefault();
+    let seeMoreChoosenId = seeMoreLink.getAttribute("data-id");
+    console.log(seeMoreChoosenId);
+
+    // Store seeMoreChoosenId in local storage
+    localStorage.setItem("seeMoreChoosenId", seeMoreChoosenId);
+
+    // Navigate to the specified URL manually
+    window.location.href = seeMoreLink.getAttribute("href");
+  }
+});
+
 render();
 
 const enter = document.getElementById("enter");
-console.log(enter);
+// console.log(enter);
 const login = document.querySelector(".login");
 const exit = document.querySelector(".exit");
 const submit = document.querySelector("#submit");
