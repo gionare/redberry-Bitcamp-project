@@ -1,26 +1,32 @@
 const image = Array.from(document.getElementsByClassName("image"));
 const blogSection = document.querySelector(".cards");
-const categorySection = document.querySelector(".categories");
-let isClicked = false;
 
-let category = "  ";
+// 1. წვდომა კატეგორიების კლასსთან (categorySection)
+// 2. მოიპოვე მასივი (categoryArr)
+// 3. გაფილტრე (categoryArr) იმის მიხედვით თუ რას დაეკლიკება ვებგვერდზე
+//  3.1 კატეგორიებზე დაკლიკებისას მოიპოვე კატეგორია (choosenCategory)
+// closest(selectors)
+//  3.2 categoryArr.filter(choosenCategory) დატოვე მხოლოდ გაფილტრული choosenCategoryForDisplay
 
-// -- categories
-categorySection.addEventListener("click", (e) => {
-  const button = e.target.closest("button");
-  if (!button) return;
-  console.log(button);
+const categorySection = document.querySelector(".categories"); // object
+let categoryArr = Array.from(categorySection.querySelectorAll("button"));
+let categoryArrTextContent = categoryArr.map((button) => button.textContent);
+// console.log(categorySection);
+// console.log(categoryArr); // categoryArr = [ button.market, button.application, ... ] .object
+// console.log(categoryArrTextContent); // array
 
-  if (!isClicked) {
-    isClicked = true;
-    button.style.border = "2px solid black";
-    category = button.textContent.trim();
-    getUserData();
-    render();
-  } else {
-    isClicked = false;
-    button.style.border = "none";
-  }
+let choosenCategory = " ";
+categorySection.addEventListener("click", (eachBtn) => {
+  let clickedBtn = eachBtn.target.closest("button");
+  let clickedBtnTitle = clickedBtn.textContent;
+  // console.log(clickedBtnTitle);
+  choosenCategory = categoryArrTextContent.filter(
+    (category) => category == clickedBtnTitle
+  );
+  // console.log(categoryArrClassList);
+  // console.log(clickedBtnClass); //string
+  console.log(choosenCategory); // Output: ["market"], ["application"], etc. object
+  render();
 });
 
 // -- Blog from API
@@ -29,7 +35,14 @@ async function render() {
   const response = await fetch("https://george.pythonanywhere.com/api/blogs/");
   const data = await response.json();
   console.log(data);
-  let blogs = data
+
+  FIXME: choosenCategory = "კვლევა";
+  // Filter blogs based on the chosen category
+  const filteredBlogs = data.filter((blog) =>
+    blog.categories.some((cat) => cat.title === choosenCategory)
+  );
+
+  let blogs = filteredBlogs
     .map(
       (item) => `
       <div class="card">
