@@ -24,9 +24,8 @@ async function render() {
       let blogHtml = `
         <div class="card">
           <section class="image">
-            <img src = "${
-              choosenBlog.image
-            }" style="width: 400px; height: 320px" alt="">
+            <img src = "${choosenBlog.image}" 
+            style="width: 400px; height: 320px" alt="">
           </section>
 
           <section class="title-author-releaseDate">
