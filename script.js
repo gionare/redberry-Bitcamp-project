@@ -8,25 +8,26 @@ const blogSection = document.querySelector(".cards");
 // closest(selectors)
 //  3.2 categoryArr.filter(choosenCategory) დატოვე მხოლოდ გაფილტრული choosenCategoryForDisplay
 
-const categorySection = document.querySelector(".categories"); // object
-let categoryArr = Array.from(categorySection.querySelectorAll("button"));
+let categoryArr = Array.from(document.querySelectorAll(".categories button"));
 let categoryArrTextContent = categoryArr.map((button) => button.textContent);
 // console.log(categorySection);
 // console.log(categoryArr); // categoryArr = [ button.market, button.application, ... ] .object
 // console.log(categoryArrTextContent); // array
 
-let choosenCategory = " ";
-categorySection.addEventListener("click", (eachBtn) => {
-  let clickedBtn = eachBtn.target.closest("button");
-  let clickedBtnTitle = clickedBtn.textContent;
-  // console.log(clickedBtnTitle);
-  choosenCategory = categoryArrTextContent.filter(
-    (category) => category == clickedBtnTitle
-  );
-  // console.log(categoryArrClassList);
-  // console.log(clickedBtnClass); //string
-  console.log(choosenCategory); // Output: ["market"], ["application"], etc. object
-  render();
+let choosenCategory = [];
+categoryArr.forEach((button) => {
+  button.addEventListener("click", (event) => {
+    if (choosenCategory.indexOf(event.target.textContent) == -1) {
+      choosenCategory.push(event.target.textContent);
+    } else {
+      choosenCategory.splice(
+        choosenCategory.indexOf(event.target.textContent),
+        1
+      );
+    }
+    console.log(Array.isArray({}));
+    render();
+  });
 });
 
 // -- Blog from API
@@ -36,11 +37,13 @@ async function render() {
   const data = await response.json();
   console.log(data);
 
-  FIXME: choosenCategory = "კვლევა";
   // Filter blogs based on the chosen category
-  const filteredBlogs = data.filter((blog) =>
-    blog.categories.some((cat) => cat.title === choosenCategory)
-  );
+  const filteredBlogs =
+    choosenCategory.length > 0
+      ? data.filter((blog) =>
+          blog.categories.some((cat) => choosenCategory.indexOf(cat.title) > -1)
+        )
+      : data;
 
   let blogs = filteredBlogs
     .map(
