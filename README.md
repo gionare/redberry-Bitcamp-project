@@ -66,7 +66,14 @@ This is a web application for a blog website where users can view various blog p
 
 ## Credits
 
-- The website design and development are done by Giorgi Nareklishvili & Luka Kurtanidze, Mentor: Beqa maisuradze
+- The website design and development are done by
+
+## Giorgi Nareklishvili
+
+## Luka Kavtaradze
+
+## Mentor: Beqa maisuradze
+
 - Blog post data is fetched from [[API Source](https://george.pythonanywhere.com/api/blogs/)].
 - Fonts used in the project are provided by Google Fonts.
 
