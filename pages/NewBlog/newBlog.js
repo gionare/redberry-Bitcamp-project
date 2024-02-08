@@ -118,8 +118,6 @@ async function getCategories() {
   try {
     const response = await fetch(
       "https://george.pythonanywhere.com/api/categories/",
-      // [ { "id": 2, "title": "მარკეტი", "text_color": "#D6961C",  "background_color": "#FFB82F"  },
-      //   { "id": 3,   "title": "აპლიკაცია",  "text_color": "#15C972", "background_color": "#1CD67D" }, ]
       {
         method: "GET",
         headers: {
@@ -168,22 +166,7 @@ submitButton.addEventListener("click", async function () {
             "Content-Type": "application/json",
             Authorization: `Token ${localStorage.getItem("token")}`,
           },
-          // TODO: დაამატე ყველა წამოსაღები მნიშვნელობა, ამ Edit Value | Model-ის მიხედვით
-          // {
-          //   "categories": [
-          //     {
-          //       "title": "string",
-          //       "text_color": "string",
-          //       "background_color": "string"
-          //     }
-          //   ],
-          // ^  "title": "string",
-          // ^  "publish_date": "2024-01-24T16:47:55.715Z",
-          // ^  "description": "string",
-          //   "image": "string",
-          // ^  "email": "user@example.com",
-          // ^  "author": "string"
-          // }
+
           body: JSON.stringify({
             categories: [
               {
@@ -195,7 +178,6 @@ submitButton.addEventListener("click", async function () {
             title: titleInput.value,
             publish_date: publish_dateInput.value,
             description: descriptionInput.value,
-            // TODO: image
             image: imageInput.value,
             email: emailInput.value,
             author: nameInput.value,

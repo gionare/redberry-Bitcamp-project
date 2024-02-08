@@ -82,14 +82,12 @@ button {
   border: 0;
   text-align: center;
 }
-/*  categories  */
+/* CATEGORIES */
 .market {
   width: 83px;
   background: rgba(255, 184, 47, 0.08);
-
   color: #d6961c;
 }
-
 .application {
   width: 97px;
   background: rgba(28, 214, 125, 0.08);
@@ -115,7 +113,7 @@ button {
   background: rgba(8, 210, 174, 0.08);
   color: #1ac7a8;
 }
-
+/* CARDS */
 .cards {
   /* border: solid; */
   width: 1288px;
@@ -135,6 +133,11 @@ button {
   height: 820px;
   border-radius: 5px;
   gap: 10px;
+}
+
+.image img {
+  width: 400px;
+  height: 320px;
 }
 .title {
   display: flex;
@@ -181,6 +184,16 @@ h3 {
   align-items: center;
   gap: 5px;
 }
+
+.mutual-categories li {
+  padding: 6px 10px;
+  border-radius: 30px;
+  align-items: flex-start;
+  color: white;
+  height: 29px;
+  gap: 16px;
+}
+
 ul {
   list-style: none;
 }
@@ -212,45 +225,7 @@ a {
   font-weight: 500;
   line-height: 20px;
 }
-
-#mutual-categories-lists {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 16px;
-}
-
-.mutual-market {
-  width: 51px;
-  background: rgba(255, 184, 47, 0.08);
-  color: #d6961c;
-}
-.mutual-application {
-  width: 85px;
-  background: rgba(28, 214, 125, 0.08);
-  color: #15c972;
-}
-.mutual-ai {
-  width: 166px;
-  background: rgba(177, 28, 214, 0.08);
-  color: #b71fdd;
-}
-.mutual-ui-ux {
-  width: 53px;
-  color: #dc2828;
-  background: rgba(250, 87, 87, 0.08);
-}
-.mutual-research {
-  width: 65px;
-  color: #60be16;
-  background: rgba(112, 207, 37, 0.08);
-}
-.mutual-figma {
-  width: 52px;
-  background: rgba(8, 210, 174, 0.08);
-  color: #1ac7a8;
-}
-
+/* LOGIN */
 .login {
   width: 480px;
   height: 272px;
@@ -380,20 +355,3 @@ h2 {
   line-height: 20px;
   margin-top: 40px;
 }
-/* .logins{
-  width: 400px;
-  height: 300px;
-  gap: 50px;
-  display: none;
-  align-items: center;
-  flex-direction: column;
-  background: white;
-}
-input{
-  width: 300px;
-  height: 100px;
-}
-button{
-  width: 300px;
-  height: 100px;
-} */

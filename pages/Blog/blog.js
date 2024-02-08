@@ -24,8 +24,7 @@ async function render() {
       let blogHtml = `
         <div class="card">
           <section class="image">
-            <img src = "${choosenBlog.image}" 
-            style="width: 400px; height: 320px" alt="">
+            <img src = "${choosenBlog.image}" alt="">
           </section>
 
           <section class="title-author-releaseDate">
@@ -38,10 +37,12 @@ async function render() {
           </section>
 
           <ul class="mutual-categories">
-            ${choosenBlog.categories.map(
-              (cat) =>
-                `<li style="color: ${cat.text_color}; border-radius:30px; height:28px; background-color: ${cat.background_color}">${cat.name}</li>`
-            )};
+            ${choosenBlog.categories
+              .map(
+                (cat) =>
+                  `<li style=" background-color: ${cat.background_color}">${cat.title}</li>`
+              )
+              .join(" ")}
           </ul>
 
           <p class="about-title">${choosenBlog.description}</p>
