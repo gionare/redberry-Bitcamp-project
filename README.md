@@ -127,3 +127,13 @@ Overall, the `render()` function enhances the user experience by dynamically dis
 - The script includes functions to open and close a popup window, providing a visual overlay for displaying additional information or interactions.
 
 Overall, the JavaScript code enhances the user experience by providing interactive features and ensuring data integrity through form validation before submission.
+
+## https://www.linkedin.com/in/gionare/
+
+🚀 Excited to share our project – Bootcamp Redberry Assignment! 📝 it is our collaborative project. Dive into the details of our API integration and Figma designs here. Special thanks to Giorgi Nareklishvili, Luka Kavtaradze, and mentor Beqa Maisuradze for their Contributions, Commits & Merges.
+
+🔧 Technologies Used: HTML, CSS, JavaScript, Fetch API, Local Storage
+
+Check it out now! #Bitcamp #Bootcamp #Redberry #Assignment #WebDevelopment #APIIntegration #FigmaDesigns #Collaboration
+
+#Credits: Giorgi Nareklishvili, Luka Kavtaradze, Beqa Maisuradze
