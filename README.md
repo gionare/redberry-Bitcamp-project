@@ -21,6 +21,8 @@ Colaborative Project - [https://redberry.gitbook.io/bootcamp-7-assignment/gverde
 
 This is a web application for a blog website where users can view various blog posts. The website allows users to filter the displayed blog posts based on different categories and provides a login feature for authorized users.
 
+<img src="./assets/meta-img.png" alt="preview image" width="400">
+
 ### Table of Contents
 
 1. [Bootcamp, Redberry Assignment](#bootcamp-redberry-assignment)
@@ -66,7 +68,7 @@ This is a web application for a blog website where users can view various blog p
 
 ## Credits
 
-- The website design and development are done by
+- The website design and development are done by:
 
 ## Giorgi Nareklishvili
 
